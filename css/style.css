@@ -105,6 +105,8 @@
   background-image: linear-gradient(165deg, #ffffff20 50%, #0008 50%);
 }
 .header_btn {
+  position: absolute;
+  border: none;
   cursor: pointer;
   z-index: 1;
   padding: 3px;
@@ -126,10 +128,20 @@
   padding: 0 10px;
 }
 .header_apartments {
-  border: none;
-  position: absolute;
   top: 20vh;
   left: 50%;
+}
+.header_park {
+  top: 53%;
+  left: 33%;
+}
+.header_mansions {
+  top: 58%;
+  left: 10%;
+}
+.header_road {
+  top: 74%;
+  left: 67%;
 }
 
 .form {

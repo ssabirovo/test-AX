@@ -1,6 +1,6 @@
 import { Viewer } from "@photo-sphere-viewer/core";
 
-let apartments_btn = document.getElementById("apartments_btn");
+let apartments_btns = document.querySelectorAll(".header_btn");
 
 const galleryPaths = [
   "./images/3d-1.png",
@@ -30,6 +30,8 @@ function setPhotos() {
   });
 }
 
-apartments_btn.addEventListener("click", () => {
-  setPhotos();
-});
+apartments_btns.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    setPhotos();
+  })
+);

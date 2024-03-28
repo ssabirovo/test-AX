@@ -70,6 +70,8 @@
     @include btnGradient;
   }
   &_btn {
+    position: absolute;
+    border: none;
     cursor: pointer;
     z-index: 1;
     padding: 3px;
@@ -88,10 +90,20 @@
     }
   }
   &_apartments {
-    border: none;
-    position: absolute;
     top: 20vh;
     left: 50%;
+  }
+  &_park {
+    top: 53%;
+    left: 33%;
+  }
+  &_mansions {
+    top: 58%;
+    left: 10%;
+  }
+  &_road {
+    top: 74%;
+    left: 67%;
   }
 }
 

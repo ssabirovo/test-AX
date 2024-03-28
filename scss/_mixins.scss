@@ -1,0 +1,23 @@
+@mixin flex($j-c: center, $a-i: center, $f-d: row, $g: 0px) {
+  display: flex;
+  flex-direction: $f-d;
+  justify-content: $j-c;
+  align-items: $a-i;
+  gap: $g;
+}
+@mixin animation() {
+  animation: modal 0.5s ease-in-out;
+}
+
+@mixin btnGradient() {
+  background-image: linear-gradient(165deg, #ffffff20 50%, #0008 50%);
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

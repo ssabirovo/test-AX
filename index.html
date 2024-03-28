@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="navbar-container">
+      <div class="navbar">
+        <div class="navbar_left">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="navbar_right">
+          <div>
+            <img src="./images/telegram-icon.svg" alt="" />
+            <img src="./images/whatsapp-icon.svg" alt="" />
+          </div>
+          <div>
+            <p>+99899 xxx xx xx</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="header">
+      <div class="header_top_shadow"></div>
+      <div class="header_bottom_shadow"></div>
+      <button popovertarget="form" class="header_download_btn">
+        Download brochure <img src="./images/download-icon.svg" alt="" />
+      </button>
+      <button
+        id="apartments_btn"
+        popovertarget="psv"
+        class="header_btn header_apartments"
+      >
+        <div>M1</div>
+        <p>Apartments</p>
+      </button>
+    </div>
+    <div popover id="psv" class="sphereModal">
+      <div class="sphereModal_top">
+        <div>2</div>
+        <p>L-Shape</p>
+        <button popovertarget="psv" class="sphereModal_xMark">
+          <img src="./images/x-mark.svg" alt="" />
+        </button>
+      </div>
+      <div id="viewer" class="sphereModal_viewer"></div>
+      <div class="sphereModal_gallery" id="gallery360"></div>
+    </div>
+    <div popover id="form">
+      <div class="form">
+        <div class="form_left">
+          <i>Don't miss the unique offer</i>
+          <p>
+            Be the first to experience the beauty of Keturah Resort at our
+            exclusive private screening event! Leave your contact information
+            below to receive an invitation to our special event.
+          </p>
+          <div class="form_left_links">
+            <div>
+              <img src="./images/telegram-icon-form.svg" alt="" />
+              <p>Telegram</p>
+            </div>
+            <div>
+              <img src="./images/whatsapp-icon-form.svg" alt="" />
+              <p>WhatsApp</p>
+            </div>
+          </div>
+        </div>
+        <div class="form_right">
+          <button class="form_right_xMark" popovertarget="form">
+            <img src="./images/x-mark.svg" alt="" />
+          </button>
+          <input placeholder="Your name" type="text" />
+          <input placeholder="Your e-mail" type="text" />
+          <input placeholder="Phone number" type="text" />
+          <button class="form_right_confirm">Join now</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+          "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
+        }
+      }
+    </script>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
